@@ -14,7 +14,7 @@ Example following https://www.baeldung.com/apache-thrift
 
 
 ## How to generate Thrift source
-Run `sudo thrift -r -out src/main/java/gen --gen java src/main/resources/thrift/service.thrift`
+Run `sudo thrift -r -out src/main/java --gen java src/main/resources/thrift/service.thrift`
 
 ## About Thrift
 * Interface Definition Language (IDL)

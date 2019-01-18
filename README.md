@@ -36,6 +36,7 @@
     - https://thrift.apache.org/
     - https://thrift.apache.org/tutorial/java
     - https://media.readthedocs.org/pdf/thrift-tutorial/latest/thrift-tutorial.pdf
+    - Thrift structs are the equivalent of classes in OOP languages but without inheritance. A struct has a set of strongly typed fields, each with a unique name as an identifier. Fields may have various annotations (numeric field IDs, optional default values, etc.).
     - Two different ways to generate the Java source code from the thrift file (see examples under thrift-example-1 and thrift-example-2):
         - Option 1: Run `mvn clean generate-sources` having configured the `libthrift` library in the pom.xml. It will be generated under target/generated-sources
         - Option 2: Manually generate the sources with the `thrift` command from a terminal, indicating the destination folder 
