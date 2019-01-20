@@ -42,8 +42,18 @@
         - Option 2: Manually generate the sources with the `thrift` command from a terminal, indicating the destination folder 
 
 ## Batch layer
-TBD
-
+* HDFS
+    - Files are split into blocks that are spread among many nodes in the cluster
+    - Blocks are replicated among many nodes so the data is still available even when machines go down
+    - The namenode keeps strack of the blocks for each file and where those blocks are stored
+* Hadoop local installation:
+    - https://hortonworks.com/products/sandbox/
+    - https://www.cloudera.com/developers/get-started-with-hadoop-tutorial.html
+    - https://bitnami.com/stack/hadoop/virtual-machine
+    - Docker:
+        - https://hub.docker.com/r/cloudera/quickstart/
+        - https://hub.docker.com/r/harisekhon/hadoop/
+        - https://hadoop.apache.org/docs/r3.0.2/hadoop-yarn/hadoop-yarn-site/DockerContainers.html
 
 ## Speed layer
 TBD
